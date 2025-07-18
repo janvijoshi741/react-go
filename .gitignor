@@ -1,0 +1,41 @@
+
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of the go build tool
+/build/
+/bin/
+/tmp/
+tmp/
+
+# Local Go modules
+go.sum
+vendor/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Dependency directories (node, if using frontend)
+node_modules/
+dist/
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Air temporary binary
+/tmp/main
+.air

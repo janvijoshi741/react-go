@@ -1,0 +1,36 @@
+
+# air.toml
+
+# [1] Root directory of your Go project
+root = "."
+tmp_dir = "tmp"
+
+# [2] Build command
+[build]
+cmd = "go build -o ./tmp/main"
+bin = "tmp/main"
+full_bin = ""
+exclude_dir = ["assets", "node_modules", "tmp"]
+include_ext = ["go", "tpl", "tmpl", "html"]
+exclude_ext = ["swp"]
+delay = 1000
+send_interrupt = true
+kill_delay = 1000
+
+# [3] Logging configuration
+[log]
+time = true
+level = "debug"
+
+# [4] Customize file watching
+[watch]
+# Directories to exclude from being watched
+exclude_dir = ["tmp", "node_modules", "vendor"]
+include_ext = ["go", "tpl", "tmpl", "html"]
+
+# [5] Miscellaneous
+[color]
+main = "yellow"
+watcher = "cyan"
+build = "green"
+runner = "magenta"
